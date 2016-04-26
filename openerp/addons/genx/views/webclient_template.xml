@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- Remove Powered By Odoo on Menu -->
+        <template id="genx.menu_secondary" inherit_id="web.menu_secondary" name="GenX Menu Secondary">
+            <xpath expr="//a[@class='oe_logo']" position="replace">
+                <a class="oe_logo" t-att-href="'/web/?debug' if debug else '/web'">
+                    <span class="oe_logo_edit">Edit Company data</span>
+                    <img src="/genx/static/src/img/genX_logo_sm_3.png"
+                         alt="Genx Logo"
+                         title="Genx Logo" />
+                </a>
+            </xpath>
+            <xpath expr="//div[@class='oe_footer']" position="replace">
+                <div class="oe_footer">Powered by <a href="http://www.datagenesis.com.ph/" target="_blank"><span>Data Genesis</span></a></div>
+            </xpath>
+        </template>
+
+        <!-- Login -->
+        <template id="genx.login_layout" inherit_id="web.login_layout" name="GenX Login Layout">
+            <xpath expr="//div[@class='oe_single_form_footer']" position="replace">
+               <div class="oe_single_form_footer" t-if="not disable_footer">
+                        <!--<t t-if="not disable_database_manager">
+                            <a class="oe_login_manage_db" t-attf-href="/web/database/manager{{ '?debug' if debug else '' }}">Manage Databases</a>
+                            <span class="oe_footer_seperator"> | </span>
+                        </t>-->
+                        <a href="http://www.datagenesis.com.ph/" target="_blank">Powered by <span>Data Genesis</span></a>
+               </div>
+            </xpath>
+             <xpath expr="//div[@class='oe_single_form_logo']" position="replace">
+               <div class="oe_single_form_logo">
+                   <img src="/genx/static/src/img/genX_logo_sm_3.png"
+                         alt="Genx Logo"
+                         title="Genx Logo" />
+               </div>
+            </xpath>
+        </template>
+
+        <template id="genx.qunit_suite" inherit_id="web.qunit_suite">
+            <xpath expr="//title" position="replace">
+                <title>GenX</title>
+            </xpath>
+            <xpath expr="//link[@rel='shortcut icon']" position="replace">
+                <link rel="shortcut icon" href="/genx/static/src/img/favicon.ico" type="image/x-icon"/>
+            </xpath>
+        </template>
+
+        <!-- Chnage Title To GenX and change Favicon -->
+        <template id="genx.layout" inherit_id="web.layout">
+            <xpath expr="//title" position="replace">
+                <title>GenX</title>
+            </xpath>
+            <xpath expr="//link[@rel='shortcut icon']" position="replace">
+                <link rel="shortcut icon" href="/genx/static/src/img/favicon.ico" type="image/x-icon"/>
+            </xpath>
+        </template>
+
+        <!-- Add new javascript to change odoo to genx -->
+        <template id="genx.assets_backend" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/genx/static/src/js/chrome.js"></script>
+            </xpath>
+        </template>
+    </data>
+</openerp>

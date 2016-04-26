@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <template id="genx_website.layout_footer_copyright" inherit_id="website.layout_footer_copyright" name="GenX Copy Right">
+            <xpath expr="//div[@class='container mt16 mb8']" position="replace">
+                <div class="container mt16 mb8">
+                    <div class="pull-right" t-ignore="true" t-if="not editable">
+                    </div>
+                    <div class="pull-left text-muted" itemscope="itemscope" itemtype="http://schema.org/Organization">
+                        Copyright &amp;copy; <span t-field="res_company.name" itemprop="name">Company name</span>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+        <!--<template id="genx_website.user_navbar" inherit_id="website.user_navbar" name="GenX Copy Right">
+            <xpath expr="//ul[@class='btn btn-primary btn-xs']" position="replace">
+            </xpath>
+        </template>-->
+    </data>
+</openerp>

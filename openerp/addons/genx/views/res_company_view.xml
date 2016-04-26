@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record id="base.main_company" model="res.company">
+		    <field name="name">Data Genesis Solutions Inc.</field>
+		    <field name="rml_header1">We Drive Business Value Through Technology</field>
+		    <field name="currency_id" ref="base.PHP"/>
+		    <field name="street">Florida St.</field>
+		    <field name="zip">1200</field>
+		    <field name="city">Makati City</field>
+		    <field name="country_id" ref="base.ph"/>
+		    <field name="email">info@datagenesis.com.ph</field>
+		    <field name="phone">+632 831-0487</field>
+		    <field name="fax">+632 831-0487</field>
+		    <field name="website">http://www.datagenesis.com.ph/</field>
+		    <field name="vat"></field>
+		    <field name="company_registry"></field>
+		</record>
+    </data>
+</openerp>

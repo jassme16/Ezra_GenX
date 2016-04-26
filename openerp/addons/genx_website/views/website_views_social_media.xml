@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="genx_website.view_website_config_settings" model="ir.ui.view">
+            <field name="name">Website settings</field>
+            <field name="model">website.config.settings</field>
+            <field name="inherit_id" ref="website.view_website_config_settings"/>
+            <field name="arch" type="xml">
+                <xpath  expr="//form/div/group[@string='Social Media']" position="replace">
+                    <group string="Social Media">
+                        <label for="social_twitter"/>
+                        <div name="social_twitter">
+                            <div class="oe_inline">
+                                <field name="social_twitter" placeholder="https://twitter.com/datagen"/>
+                            </div>
+                        </div>
+                        <label for="social_facebook"/>
+                        <div name="social_facebook">
+                            <div class="oe_inline">
+                                <field name="social_facebook" placeholder="https://facebook.com/datagen"/></div>
+                            </div>
+                        <label for="social_github"/>
+                        <div name="social_github">
+                            <div class="oe_inline">
+                                <field name="social_github" placeholder="https://datagen.github.io"/>
+                            </div>
+                        </div>
+                        <label for="social_linkedin"/>
+                        <div name="social_linkedin">
+                            <div class="oe_inline">
+                                <field name="social_linkedin" placeholder="http://www.linkedin.com/company/datagen"/>
+                            </div>
+                        </div>
+                        <label for="social_youtube"/>
+                        <div name="social_youtube">
+                            <div class="oe_inline">
+                                <field name="social_youtube" placeholder="http://www.youtube.com/channel/datagen"/>
+                            </div>
+                        </div>
+                        <label for="social_googleplus"/>
+                        <div name="social_googleplus">
+                            <div class="oe_inline">
+                                <field name="social_googleplus" placeholder="https://plus.google.com/+datagen"/>
+                            </div>
+                        </div>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="base.group_portal" model="res.groups">
+            <field name="name">Portal</field>
+            <field name="comment">Portal members have specific access rights (such as record rules and restricted menus).
+                They usually do not belong to the usual GenX groups.</field>
+        </record>
+
+         <record id="base.group_public" model="res.groups">
+            <field name="name">Public</field>
+            <field name="comment">Public users have specific access rights (such as record rules and restricted menus).
+                They usually do not belong to the usual GenX groups.</field>
+        </record>
+    </data>
+</openerp>

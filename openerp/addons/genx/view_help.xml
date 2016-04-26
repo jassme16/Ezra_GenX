@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+ <data noupdate="0">
+    <record id="genx.custom_help" model="ir.config_parameter">
+        <field name="key">genx.new_name</field>
+        <field name="value">GenX</field>
+    </record>
+     <record id="genx.custom_title" model="ir.config_parameter">
+        <field name="key">genx.new_title</field>
+        <field name="value">GenX</field>
+    </record>
+ </data>
+</openerp>

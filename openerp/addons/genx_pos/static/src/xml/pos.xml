@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vim:fdl=1:
+-->
+<templates xml:space="preserve">
+    <!-- POS -->
+    <t t-extend="PosWidget">
+        <t t-jquery=".pos-branding" t-operation="replace">
+            <div class="pos-branding">
+                <img class="pos-logo" src="/genx/static/src/img/genX_logo_sm_3.png" />
+                <span class="placeholder-UsernameWidget"></span>
+            </div>
+        </t>
+    </t>
+</templates>
+

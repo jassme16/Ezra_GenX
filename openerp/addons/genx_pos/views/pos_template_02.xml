@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="genx.index" inherit_id="point_of_sale.index">
+            <xpath expr="//title" position="replace">
+                <title>GenX POS</title>
+            </xpath>
+            <xpath expr="//link[@href='/web/static/src/img/favicon.ico']" position="replace">
+                <link rel="shortcut icon" href="/genx/static/src/img/favicon.ico" type="image/x-icon"/>
+            </xpath>
+        </template>
+    </data>
+</openerp>
